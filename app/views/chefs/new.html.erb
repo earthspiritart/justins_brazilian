@@ -1,0 +1,22 @@
+<h1>New Chef</h1>
+
+<%= form_for(@chef) do |f| %>
+<fieldset>
+<%= f.label :name %>
+  <%= f.text_field :name %>
+<section>
+  <%= f.label :show %>
+  <%= f.text_field :show %>
+</section>
+<section>
+  <%= f.label :specialty %>
+  <%= f.text_field :specialty %>
+</section>
+<section>
+  <%= f.label :avatar %>
+  <%= f.text_field :avatar %>
+</section>
+<%= f.submit("save") %>
+</fieldset>
+
+  <% end %>
