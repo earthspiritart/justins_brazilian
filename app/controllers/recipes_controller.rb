@@ -26,7 +26,7 @@ class RecipesController < ApplicationController
   def update
     @recipe = Recipe.find(params[:id])
     if @recipe.update_attributes(recipe_params)
-      flash[:notice] = "#{@recipe.name} has been updated"
+      flash[:notice] = "recipe has been updated"
       redirect_to recipe_path(@recipe.id)
     else 
       flash[:error] = "There was an error updating your form"
