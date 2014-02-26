@@ -7,3 +7,5 @@
 <br>
 <div>Tv Show: <%= @chef.show %><div>
 <div><%= image_tag(@chef.avatar) %></div>
+
+<%= link_to("delete", show_chef_path(@chef.id))

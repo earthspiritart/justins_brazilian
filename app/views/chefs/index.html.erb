@@ -1,15 +1,16 @@
 <h1>Chef List</h1>
-
-<tbody>
+<table>
+  <tbody>
     <% @chefs.each do |chef| %>
       <tr>
         <td><%= chef.name %></td>
-        <td><%= chef.show %></td>
         <td><%= chef.specialty %></td>
-        <td><%= chef.avatar %></td>
+        <td><%= chef.show %></td>
         <td><%= link_to('show', chef_path(chef.id)) %></td>
-        <td><%= link_to('edit', edit_chef_path(chef.id)) %></td><br>    
+        <td><%= link_to('edit', edit_chef_path(chef.id)) %></td>
+        <td><%= link_to("delete", chef_path(chef.id), method: :delete, confirm: "Are you sure") %></td>
       </tr>
 
     <% end %>
   </tbody>
+</table>

@@ -34,6 +34,13 @@ class ChefsController < ApplicationController
     end
   end
 
+  def destroy
+      @chef = Chef.find(params[:id])
+      @chef.destroy
+      flash[:notice] = "the chef was destroyed"
+      redirect_to chefs_path
+  end
+
   def index
     @chefs = Chef.all
   end
