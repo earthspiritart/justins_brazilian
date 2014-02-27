@@ -5,14 +5,13 @@ class SessionsController < ApplicationController
 
 
   def create
-  @user = User.find_by(email: params[:email])
-  if @user.try(:authenticate), params[:password])
-    session[:current_user] = @user
-    redirect_to root_path, notice: "Logged In"
-  else
-    flash|:error| = "You messed Up"
-    render :new
-
+    @user = User.find_by(email: params[:email])
+    if @user.try(:authenticate, params[:password])
+      session[:current_user] = @user
+      redirect_to root_path, notice: "Logged In"
+    else
+      flash[:error] = "You messed Up"
+      render :new
     end
   end
 

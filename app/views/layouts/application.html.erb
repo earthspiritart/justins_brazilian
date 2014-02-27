@@ -11,7 +11,16 @@
     <h3>Justin's Brazilian Cookery</h3>
   </div>
     <% flash.each do |name, msg| %>
-    <%= content_tag :div, msg, class: name %>
+      <%= content_tag :div, msg, class: name %>
+    <% end %>
+    <% if logged_in? %>
+      <span id="ten">Que Pasa? <%= current_user.name%></span>
+      <span id="eleven"><%= link_to("logout", logout_path, 
+      method: :delete) %></span>
+    <% else %>
+      <%= link_to("login Please", login_path) %>
+      <%= link_to("Signup", new_user_path) %>
+    
     <% end %>
 
 <div id="four"><%= yield %><div>

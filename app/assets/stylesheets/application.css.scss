@@ -13,9 +13,11 @@
  *= require "recipes"
  *= require "static_pages"
  */
-fieldset {
-  margin-left: 140px;
+
+#ten {
+  float: right;
 }
+
 td {
   padding: 5px 15px;
 }
@@ -93,9 +95,13 @@ h3 {
   background-color: #47ab90;
 }
 
-#seven {
+#eight {
   float: right;
   height: 80px;
   width: 30%;
   background-color: white;
+}
+
+#nine {
+  margin-left: 140px;
 }
