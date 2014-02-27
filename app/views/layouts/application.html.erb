@@ -7,11 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% flash.each do |name, msg| %>
-  <%= content_tag :div, msg, class: name %>
-  <% end %>
+  <div id="one">
+    <h3>Justin's Brazilian Cookery</h3>
+  </div>
+    <% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, class: name %>
+    <% end %>
 
-<%= yield %>
-
+<div id="four"><%= yield %><div>
+  <div id="two">
+      
+</ul>
+  </div>
 </body>
 </html>

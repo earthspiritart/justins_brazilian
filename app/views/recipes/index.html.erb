@@ -1,18 +1,18 @@
 <h1>Recipe List</h1>
-
-<tbody>
+<table>
+  <tbody>
 
     <% @recipe.each do |recipe| %>
       <tr>
         <td><%= recipe.title %></td>
-        <td><%= recipe.ingredients %></td>
         <td><%= link_to('show', recipe_path(recipe.id)) %></td>
         <td><%= link_to('edit', edit_recipe_path(recipe.id)) %></td>
         <td><%= link_to("delete", recipe_path(recipe.id), method: :delete, confirm: "Are you sure") %>
-         %></td>
+         </td>
 
   
       </tr>
 
     <% end %>
   </tbody>
+<table>

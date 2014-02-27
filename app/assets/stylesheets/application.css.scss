@@ -14,15 +14,23 @@
  *= require "static_pages"
  */
 
+
+td {
+  padding: 5px 15px;
+
+}
+
+
 table {
   margin: 0 auto ;
-  border: 1px solid black;
+  padding: 15px;
+  background-color: #fff;
   width: 80%;
 }
 
 
 body {
-  background-color: #fff;
+  background-color: #ffa698; 
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 18px;
@@ -31,16 +39,36 @@ body {
 
 
 a {
-  color: #000;
-  &:visited {
-    color: #666;
+  color: #62ccb7;
+ 
   }
-  &:hover {
-    color: #fff;
-    background-color: #000;
+a:hover {
+    color: #419483;
   }
-}
+
 h1 {
-  color: orange;
-  text-align: center;
+  color: white;
+  text-align: left;
+  margin: 15px 0 -5px 140px;
 }
+
+h3 {
+  margin: 0 0 0 40px;
+}
+
+#one {
+  margin: 10px auto;
+  height: 30px;
+  width: 80%;
+  background-color: #93c9ba;
+}
+
+#two {
+  margin: 10px auto;
+  height: 30px;
+  width: 80%;
+  background-color: #93c9ba;
+}
+
+
+

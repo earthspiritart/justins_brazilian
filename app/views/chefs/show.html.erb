@@ -1,11 +1,11 @@
-<h1>Show Chef<small><%= link_to("edit", edit_chef_path(@chef.id)) %>
-</small></h1>
+<h1>Show Chef</h1>
 
 <h2>Chef: <%= @chef.name %></h2>
 <br>
 <h3><%= @chef.specialty %></h3>
 <br>
 <div>Tv Show: <%= @chef.show %><div>
-<div><%= image_tag(@chef.avatar) %></div>
+<div id="img"><%= image_tag(@chef.avatar) %></div>
 
-<%= link_to("delete", show_chef_path(@chef.id))
+<%= link_to("delete", show_chef_path(@chef.id)) %>
+<%= link_to("edit", edit_chef_path(@chef.id)) %>
