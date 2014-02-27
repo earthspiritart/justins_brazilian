@@ -1,8 +1,9 @@
 JustinsBrazilianCookery::Application.routes.draw do
   resources :chefs
   resources :recipes
+  resources :users, only: [:new, :create]
 
-  get "/" => "static_pages#home"
+  root "static_pages#home"
   get "/about" => "static_pages#about"
   
 

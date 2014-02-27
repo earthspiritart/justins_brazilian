@@ -13,11 +13,11 @@
  *= require "recipes"
  *= require "static_pages"
  */
-
-
+fieldset {
+  margin-left: 140px;
+}
 td {
   padding: 5px 15px;
-
 }
 
 
@@ -30,7 +30,7 @@ table {
 
 
 body {
-  background-color: #ffa698; 
+  background-color: #dba270; 
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 18px;
@@ -65,10 +65,37 @@ h3 {
 
 #two {
   margin: 10px auto;
-  height: 30px;
+  height: 45px;
   width: 80%;
-  background-color: #93c9ba;
+  background-color: #f5e6d7;
 }
 
+#nav {
+  list-style: none; }
 
+#nav li {
+  vertical-align: middle;
+  float: left;
+  color: #ffffff !important; 
+  padding: 5px 20px 15px 0;
+}
 
+#six {
+  margin: 10px auto;
+  height: 80px;
+  width: 80%;
+  background-color: #f5e6d7;
+}
+
+#seven {
+  height: 20px;
+  width: 100%;
+  background-color: #47ab90;
+}
+
+#seven {
+  float: right;
+  height: 80px;
+  width: 30%;
+  background-color: white;
+}
